@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500 my-5
+}
+.btnDanger{
+    @apply bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duration-500 my-5
+}
+.line {
+    height: 8px;
+    width: 8px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    left: -55px;
+    top: 3px;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    right: -55px;
+    top: 3px;
+}
+.mainGradient{
+    @apply bg-gradient-to-r from-emerald-200 via-emerald-800 to-emerald-500;
+    filter: blur(20px);
+    -webkit-filter: blur(150px);
+    border-radius: 9999px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.fPass{
+    height: 500px;
+}
